@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./Styles/Index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <nav id="Navbar" class="navbar">
+    </nav>
+    <div class="flex-grow flex flex-col justify-between" id="indexCardContainer">
+        <section id="indexCardSection" class="grid grid-cols-4 mt-8 mb-2 justify-items-center">
+        </section>
+    
+        <div id="paginationButtons" class="pagination-buttons mb-8">
+            <button id="prevPageBtn" class="pagination-btn">Previous</button>
+            <button id="nextPageBtn" class="pagination-btn">Next</button>
+        </div>
+    </div>
+
+    <script type="module" src="./Functions/IndexCardSection.js"></script>
+    <script type="module" src="./src/CampaignTypeApi.js"></script>
+    <script type="module" src="./Functions/SearchProject.js"></script>
+    <script type="module" src="./components/Navbar.js"></script>
+    <script type="module" src="./components/Footer.js"></script>
+</body>
+</html>

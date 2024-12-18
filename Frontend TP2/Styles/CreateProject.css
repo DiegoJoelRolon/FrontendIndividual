@@ -1,0 +1,92 @@
+:root{
+  --darkest: #1f2937;
+  --title: white;
+  --content: #9ca3af;
+  --main-background : #4b5563;
+  --border-radius : 20px;
+  --textColor:#e5e7eb;
+}
+
+body{
+  font-family: sans-serif
+}
+
+#mainBackground{
+  background-color: var(--main-background);
+}
+#mainBackground select{
+  background-color: var(--main-background);
+  border-radius: 10px;
+  color: var(--textColor);
+  padding: 12px;
+  width: 100%;
+}
+#mainBackground input{
+  background-color: var(--main-background);
+  border-radius: 10px;
+  color: var(--textColor);
+  padding: 12px;
+  width: 100%;
+}
+
+#projectFormdata{
+  background-color: var(--darkest);
+  border-radius: var(--border-radius);
+  padding: 32px;
+  max-width: 896px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+
+}
+#projectFormdata h1{
+  color: var(--title);
+  font-size: 3.9em;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#projectFormdata #projectName{
+  margin-bottom: 24px; 
+}
+#projectFormdata #clientAndCamp{
+  margin-bottom: 24px; 
+  gap: 24px;
+}
+#projectFormdata #startEnd{
+  margin-bottom: 24px; 
+  gap: 24px;
+}
+#projectFormdata input{
+  padding: 12px;
+  width: 100%;
+}
+#projectFormdata input:focus{
+  border-width: 1px;
+  border-color: white;
+}
+#projectFormdata label{
+  color: var(--title);
+  font-size: larger;
+  margin-bottom: 12px;
+}
+#projectFormdata button{
+  background-color: #3B82F6;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: larger;
+  padding-top:12px;
+  padding-bottom:12px;
+  margin-top: 12px;
+}
+#projectFormdata button:hover{
+  transform: scale(1.04);
+  transition: 300ms;
+}
+
+.client-select {
+  max-height: 50px;
+  overflow-y: auto;
+}

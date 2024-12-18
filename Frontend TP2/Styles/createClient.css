@@ -1,0 +1,81 @@
+:root{
+    --darkest: #1f2937;
+    --title: white;
+    --content: #9ca3af;
+    --main-background : #4b5563;
+    --textColor:#e5e7eb;
+}
+body{
+    font-family: sans-serif
+}
+#mainBackground{
+    background-color: var(--main-background);
+    justify-content: center;
+    align-items: center;
+}
+#formcontainer{
+    margin-left: 60rem;
+}
+#clientForm{
+    background-color: var(--darkest);
+    width: 34rem;
+    margin-top: 20px ;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
+}
+#clientForm div{
+    margin-bottom: 24px;
+}
+#clientForm h1{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+#clientForm label{
+    color: var(--textColor);
+    font-size: larger;
+    font-weight: bold;
+}
+
+#clientForm input{
+    background-color: var(--main-background);
+    border-radius: 5px;
+    width: 100%;
+    padding-top: 12px;  
+    padding-bottom: 12px;
+    padding-left: 16px; 
+    padding-right: 16px;
+    color:var(--textColor);
+    
+}
+#clientForm input:focus{
+    border-color: white;
+    border-width: 1px;
+}
+#clientForm button{
+    width: 70%;               
+    background-color: #3b82f6;  
+    color: white;               
+    font-weight: bold;          
+    margin-left: 15%;
+    padding-top: 10px;           
+    padding-bottom: 10px;      
+    padding-left: 24px;         
+    padding-right: 24px;   
+    border-radius: 500px;      
+    font-size: larger;
+}
+#clientForm button:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+#navbarContent{
+    background-color: var(--darkest);
+    
+}

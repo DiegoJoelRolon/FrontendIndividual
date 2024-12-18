@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./Styles/CreateProject.css" />
+</head>
+
+<body class="flex flex-col min-h-screen">
+  <nav id="Navbar" class="w-full"></nav>
+
+  <div class="flex-grow flex flex-col justify-between" id="mainBackground">
+    <div class="container mx-auto px-4 py-8">
+      <form id="projectFormdata">
+        <h1>Create New Project</h1>
+
+        <div id="projectName">
+          <label for="name" class="block">Project Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Example: Website Redesign"
+            required
+          />
+        </div>
+
+        <div id="clientAndCamp" class="grid grid-cols-2 gap-6">
+          <div>
+            <label for="clientId" class="block">Client</label>
+            <select id="clientId" required>
+              <option value="">Select a Client</option>
+            </select>
+          </div>
+          <div>
+            <label for="campaignId" class="block">Campaign Type</label>
+            <select id="campaignId" required>
+              <option value="">Select a Campaign Type</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="startEnd" class="grid grid-cols-2">
+          <div>
+            <label for="inicio" class="block">Start Date</label>
+            <input type="date" id="inicio" required />
+          </div>
+          <div>
+            <label for="fin" class="block">End Date</label>
+            <input type="date" id="fin" required />
+          </div>
+        </div>
+
+        <button type="submit">Create Project</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="./Functions/CreateProject.js"></script>
+  <script type="module" src="./Functions/SearchProject.js"></script>
+  <script type="module" src="./components/Navbar.js"></script>
+  <script type="module" src="./src/ClientApi.js"></script>
+  <script type="module" src="./components/Footer.js"></script>
+</body>
+
+</html>

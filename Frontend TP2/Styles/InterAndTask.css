@@ -1,0 +1,114 @@
+:root{
+    --darkest: #1f2937;
+    --title: white;
+    --content: #9ca3af;
+    --main-background : #4b5563;
+    --cardText: #e5e7eb;
+    --taskColor: #064E3B ;
+    --interactionColor:#1D4ED8 ;
+
+}
+body{
+    font-family: sans-serif
+}
+
+
+#taskContainer{
+    padding: 30px
+}
+
+#interactionContainer{
+
+    padding: 30px
+}
+
+#interactionCard{
+    background-color: var(--interactionColor) ;
+    padding: 16px;
+    border-radius: 10px;
+}
+#interactionCard p{
+    font-size:larger;
+    color: var(--cardText);
+    justify-self: center
+}
+#taskCard{
+    background-color: var(--taskColor);
+    padding: 16px;
+    border-radius: 10px;
+}
+#taskCard p {
+    font-size: larger;
+    color: var(--cardText);
+    justify-self: center
+}
+#taskCard:hover{
+    background-color: #043B2A ;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#modalContainer{
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+}
+#modalContainer h3{
+    font-size: x-large ;
+    font-weight:bolder;
+    color: var(--darkest);
+    margin-bottom: 16px;
+    justify-self: center;
+}
+#modalContainer label{
+    color: var(--darkest);
+    font-weight: bold;
+}
+#cardsContainer{
+    background-color: var(--darkest);
+    border-radius: 10px;
+    margin:0px auto;
+    margin-bottom: 50px;
+}
+
+#cardsContainer #projectDetailsBtn{
+    background-color:#6788b6;
+    color: white;
+    font-weight: bolder;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+#mainContainer{
+    background-color: var(--main-background);
+    padding-top:50px ;
+
+}
+#addbuttons button{
+    padding: 8px 16px;
+    color: var(--darkest);
+    border-radius: 10px;
+    font-weight: bold;
+}
+#addbuttons #addInteractionBtn{
+    background-color: var(--interactionColor);
+    border-width: 3px;
+    border-color: var(--interactionColor);
+    color: white;
+}
+#addbuttons #addTaskBtn{
+    background-color: var(--taskColor);
+    border-width: 3px;
+    border-color: var(--taskColor);
+    color: white;
+}
+
+#addbuttons #addTaskBtn:hover {
+    transform: scale(1.03);
+
+}
+#addbuttons #addInteractionBtn:hover {
+    transform: scale(1.03);
+}
+
+#projectModal p{
+    margin-bottom: 5px;
+}
